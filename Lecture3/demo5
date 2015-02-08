@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Enter the original file path"
+
+read a
+
+echo "Enter the new file path"
+
+read b
+
+if cp $a $b
+then
+    echo "File copied successfully"
+else
+    echo "Failed"
+fi

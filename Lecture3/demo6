@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter the filename"
+
+read a
+
+if [ -w $a ]
+then
+    echo "Has write permission"
+    echo "Hello World!!" >> $a
+else
+    echo "Doesn't have write permission"
+fi

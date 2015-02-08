@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# While Loop
+echo "While loop"
+i=0
+while [[ $i -lt 10 ]]
+do
+    echo $i
+    i=`expr $i + 1`
+done
+
+# Until Loop
+echo "Until loop"
+j=0
+until [[ $j -gt 10 ]]
+do
+    echo $j
+    j=`expr $j + 1`
+done
+
+# For Loop in Shell Script
+for var in *
+do
+    if [ -d $var ]
+    then
+        echo $var
+    fi
+done

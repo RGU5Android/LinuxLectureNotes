@@ -1,0 +1,23 @@
+#!/bin/bash
+
+string1="Xcaliber Infotech Pvt. Ltd."
+string2="Xcaliber Technologies."
+string3=
+
+
+echo "Using = "
+[[ $string1 = $string2 ]]
+echo $?
+
+echo "Using !="
+[ "$string1" != "$string2" ]
+echo $?
+
+echo "Using -n"
+[ -n "$string3" ]
+echo $?
+
+echo "Using -z"
+[ -z "$string3" ]
+echo $?
+

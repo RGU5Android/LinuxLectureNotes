@@ -1,0 +1,4 @@
+1. Constants in shell script is defined using 'readonly' keyword
+
+2. Command line parameters - Positional Parameters. Limit of positional parameters in Shell Script is $0 to $9.
+$0 is for filename

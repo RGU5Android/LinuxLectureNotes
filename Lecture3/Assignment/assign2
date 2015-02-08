@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Enter the 3 sides of triangle"
+
+read s1 s2 s3
+
+if [ $s1 -lt `expr $s2 + $s3` -a $s2 -lt `expr $s1 + $s3` -a $s3 -lt `expr $s1 + $s2` ]
+then
+    echo "Triangle can be formed."
+else
+    echo "Triangle can't be formed."
+fi
+

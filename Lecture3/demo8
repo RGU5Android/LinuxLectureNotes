@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Enter the number:"
+read value
+
+case "$value" in
+1)
+    echo "One"
+    ;;
+2)
+    echo "Two"
+    ;;
+3)
+    echo "Three"
+    ;;
+*)
+    echo "The number should be within 1 to 3"
+    ;;
+esac
